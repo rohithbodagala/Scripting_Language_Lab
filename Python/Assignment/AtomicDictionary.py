@@ -14,7 +14,7 @@ print("Atomic Name:")
 y=input()
 atoms[x]=y
 print(atoms.items())
-print(len(atoms))
+print("Length of the dictionary is",len(atoms))
 print("Enter a key to search")
 z=input()
 print(atoms[z])
