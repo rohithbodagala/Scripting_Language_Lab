@@ -1,0 +1,25 @@
+print("Demo list mainpulation")
+list1=['Titan',22,5.42,'Belgium','conan detective']
+list2=[45,'hancock']
+print(list)
+print(list1[0])
+print(list1[1:3])
+print(list1[2:])
+print(list2*2)
+print(list1+list2)
+print("Demo tuple manipulation")
+mytuple=('Titan',22,5.42,'Belgium','conan detective')
+yourtuple=(45,'hancock')
+print(mytuple)
+print(mytuple[0])
+print(mytuple[1:3])
+print(mytuple[2:])
+print ("\nDemo:Difference between List and Tuple")
+print("The only way to change the tuple is to replace it completely")
+mytuple=('Archie',17,5.42,'Riverdale','Teenage student')
+yourtuple=(17,'Veronica')
+mytuple=mytuple+yourtuple
+print(mytuple)
+yourtuple=yourtuple*2
+print(yourtuple)
+print(4**3)
