@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+        <title>Patient details</title>
+        <body>
+            <p id="demo"></p>
+            <script>
+                var i,x,patient;
+                patient={"name":{"John":"Dr.Mohan Reddy","Lilly":"Dr.Vengal Rao"},
+                    "disease":{"Fever":["Headache","Feeling weak","Increased body temperataure"],
+                                "Cold":["Headache","Coughing","Sneezing","Decreased Body temperature"]
+                               }
+                    };
+                    document.write("Patient     Doctor<br>")
+                    for(i in patient.name){
+                        x+="<h3>"+patient.name[i]+"</h3>"
+                    }
+                    document.getElementById("demo").innerHTML=x;
+            </script>
+        </body>
+</html>
