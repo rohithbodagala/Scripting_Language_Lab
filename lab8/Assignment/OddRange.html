@@ -9,23 +9,28 @@
 			var x=parseInt(num1);
 			var y=parseInt(num2);
 			var list=[];
-			var i=0;
-	                while(x<=y)
-		        if((x%2)==0)
+			var i=0,p="";
+	        while(x<=y)
 			{
+			
+		        if((x%2)==0)
+				{
 			        x=x+1;
 			        list[i]=x;
 			        i=i+1;
-			}
+				}
 		        else
 		        {
 			        list[i]=x;
 			        i=i+1;
-                                x=x+2;
+                    x=x+2;
+				}
 			}
-			for (var j = 0; j< list.length; i++) {
-        document.getElementById("result").innerHTML = list[j];
-  }
+			for (var j = 0; j< list.length; j++)
+			{	
+				p+=list[j]+"\n";
+  			}
+			document.getElementById("result").innerHTML =p;
 		}
 </script>
 <style type="text/css">
@@ -38,7 +43,7 @@ body {margin:30px;}
 		2nd Number:<input type="text" id="secondNumber"/><br>
 		<input type="button" onClick="OddRange()" Value="Odd numbers list"/>
 	</form>
-	<p>The Result is:<br>
+	<p>The Odd numbers between the two numbers are:<br>
 		<span id="result"></span>
 	</p>
 </body>
