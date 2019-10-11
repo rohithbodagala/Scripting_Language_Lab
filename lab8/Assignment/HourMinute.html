@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function HourMinute()
+		{
+			num1=document.getElementById("Number").value;   
+			var x=parseInt(num1/60)
+			var y=num1%60
+				document.getElementById("result").innerHTML=x +":"+y;
+		}
+</script>
+<style type="text/css">
+body {margin:30px;}
+</style>
+</head>
+<body>
+	<form>
+		Minutes:<input type="text" id="Number"/><br>
+		<input type="button" onClick="HourMinute()" Value="Convert"/>
+	</form>
+	<p>The Result is:<br>
+		<span id="result"></span>
+	</p>
+</body>
+</html>
