@@ -1,8 +1,9 @@
 def AgeConvert(a):
-	b=int(a[0:2])
-	c=int(a[3:4])
-	d=int(a[6:])
-	print(2019-d)
+    a= a.split("-")
+    age = 2019 - int(num[2])
+    if int(num[1])>10:
+        age = age - 1
+    print(age)
 print("Enter the date of birth")
 a=input();
 AgeConvert(a)
