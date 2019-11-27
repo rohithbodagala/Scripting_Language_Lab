@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function OddRange()
+		{
+			num1=document.getElementById("firstNumber").value;
+			num2=document.getElementById("secondNumber").value;
+			var x=parseInt(num1);
+			var y=parseInt(num2);
+			var list=[];
+			var i=0,p="";
+	        while(x<=y)
+			{
+			
+		        if((x%2)==0)
+				{
+			        x=x+1;
+			        list[i]=x;
+			        i=i+1;
+				}
+		        else
+		        {
+			        list[i]=x;
+			        i=i+1;
+                    x=x+2;
+				}
+			}
+			for (var j = 0; j< list.length; j++)
+			{	
+				p+=list[j]+"\n";
+  			}
+			document.getElementById("result").innerHTML =p;
+		}
+</script>
+<style type="text/css">
+body {margin:30px;}
+</style>
+</head>
+<body>
+	<form>
+		1st Number:<input type="text" id="firstNumber"/><br>
+		2nd Number:<input type="text" id="secondNumber"/><br>
+		<input type="button" onClick="OddRange()" Value="Odd numbers list"/>
+	</form>
+	<p>The Odd numbers between the two numbers are:<br>
+		<span id="result"></span>
+	</p>
+</body>
+</html>

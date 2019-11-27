@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function ChangeString()
+		{
+			s=document.getElementById("Word").value;
+			var n="",k="";
+			for(var i=0;i<s.length;i++)
+			{
+				if(s.charAt(i)>='a' && s.charAt(i)<='z')
+				{
+					if(s.charAt(i)!='z')
+					{
+						n=n+String.fromCharCode(s.charCodeAt(i)+1);
+					}
+					else
+					{
+						n=n+'a';
+					}
+				}
+				else
+				{
+					n+=s.charAt(i);
+				}
+			}
+			for(var i=0;i<n.length;i++)
+			{
+				if(n.charAt(i)=='a' || n.charAt(i)=='e' || n.charAt(i)=='i' || n.charAt(i)=='o' || n.charAt(i)=='u')
+				{
+					k+=n[i].toUpperCase();
+				}
+				else
+					k+=n.charAt(i);
+			}
+			document.getElementById("result").innerHTML=k;
+			
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		String:<input type="text" id="Word"/><br>
+		<input type="button" onClick="ChangeString()" Value="Convert"/>
+	</form>
+	<p>The result is:<br>
+		<span id="result"></span></p>
+</body>
+</html>
